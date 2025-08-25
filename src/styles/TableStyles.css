@@ -1,0 +1,143 @@
+/* Global Table Styles */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Ant Design Table Overrides */
+.ant-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.ant-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.ant-table-container {
+    overflow-x: auto;
+    border: none;
+}
+
+.ant-table-content {
+    overflow-x: auto;
+}
+
+.ant-table-body {
+    overflow-x: auto;
+}
+
+/* Table Cell Styles */
+.ant-table-cell {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    padding: 12px !important;
+}
+
+/* Action Column */
+.action-column {
+    min-width: 150px !important;
+    width: 150px !important;
+    text-align: center;
+}
+
+/* Button Container in Table */
+.button-container {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+/* Action Buttons */
+.action-button {
+    padding: 4px 8px;
+    font-size: 12px;
+    white-space: nowrap;
+    min-width: 60px;
+    margin: 0;
+}
+
+/* Status Badge */
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    min-width: 80px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .table-container {
+        padding: 10px;
+    }
+
+    .ant-table {
+        font-size: 14px;
+    }
+
+    .ant-table-cell {
+        padding: 8px !important;
+        max-width: 150px;
+    }
+
+    .action-column {
+        min-width: 120px !important;
+        width: 120px !important;
+    }
+
+    .action-button {
+        padding: 2px 6px;
+        font-size: 11px;
+        min-width: 50px;
+    }
+
+    .button-container {
+        gap: 4px;
+    }
+}
+
+/* Fix for table header */
+.ant-table-thead>tr>th {
+    background: #fafafa;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Ensure consistent cell padding */
+.ant-table-cell {
+    padding: 12px !important;
+}
+
+/* Fix for table pagination */
+.ant-table-pagination {
+    margin: 16px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Fix for table filters */
+.ant-table-filter-trigger {
+    margin-left: 8px;
+}
+
+/* Fix for table selection */
+.ant-table-selection-column {
+    width: 40px !important;
+    min-width: 40px !important;
+}
